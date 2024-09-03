@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logueado</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <section>
+        <header class="header">
+            <nav>
+                <ul>
+                    <li><a href="#contacto#">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section id="galeria" class="gallery">
+        <h2 class="titulogaleria">Galería</h2>
+        <div class="grid-container">
+            <img src="../resources/imagen1.webp" alt="Imagen 1">
+            <img src="../resources/2.jpg" alt="Imagen 2">
+            <img src="../resources/3.jpg" alt="Imagen 3">
+            <img src="../resources/4.jpg" alt="Imagen 4">
+        </div>
+    </section>
+
+    <section>
+        <br>
+        <h2>Haz click en cualquiera de las imágenes, para dejar tus comentarios</h2>
+        <h2>Haz click en contacto, para que te linke directamente a nuestro whatsapp</h2>
+    </section>
+
+    <!-- Sección para la ventana emergente -->
+    <div id="image-popup" class="popup hidden">
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="Imagen ampliada">
+            <div class="comments-section">
+                <h3>Comentarios</h3>
+                <ul id="comments-list"></ul>
+                <form id="comment-form">
+                    <textarea id="comment-input" placeholder="Escribe tu comentario"></textarea>
+                    <button type="submit" class="button">Dejar comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/logueado.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

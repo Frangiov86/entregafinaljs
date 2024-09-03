@@ -1,0 +1,309 @@
+/* Reset CSS para una base uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.logeopagina {
+    background-color: #000; 
+    color: #0f0; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -130px;
+}
+
+.parrafo2 {
+    font-size: 20px;
+    background-color: #000; 
+    color: #0f0; 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.parrafo {
+    background-color: #000; 
+    color: #0f0; 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.tituloh2logeo {
+    text-align: center; 
+    margin: 0 0 20px; 
+    font-size: 24px; 
+    color: #0f0; 
+}
+
+.login-form {
+    background: #000; 
+    color: #0f0; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative; /* Para posicionar el ícono del ojo dentro del form */
+    transform: translateX(-35px);
+}
+
+.login-form h2 {
+    margin: 0 0 15px;
+    font-size: 24px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #f00;
+    border-radius: 4px;
+    background: #fff;
+    color: #000; 
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #0f0; 
+    color: #000; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #0c0; 
+}
+
+.login-form p {
+    color: #f00; 
+}
+
+/* Estilo para el ícono del ojo en el campo de contraseña */
+#toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 75%;
+    transform: translateY(-100%);
+    cursor: pointer;
+    font-size: 35px;
+    color: #1a1717; /* Color gris claro para el ícono */
+
+}
+
+#toggle-password:hover {
+    color: #999; /* Un tono más oscuro al pasar el mouse */
+}
+
+/* Estilos para la clase .header */
+.header {
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold; 
+    font-family: 'Arial', sans-serif; 
+    padding: 10px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #000; 
+    background: #fff; 
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 120px); 
+    gap: 10px;
+    justify-content: center; 
+}
+
+.grid-container img {
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    transition: transform 0.3s; 
+}
+
+.grid-container img:hover {
+    transform: scale(1.1); 
+}
+
+.titulogaleria {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.parrafogaleria {
+    text-align: center;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed;
+    z-index: 1; /* Asegura que el modal esté encima del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite desplazamiento si es necesario */
+    background-color: rgb(0,0,0); /* Color de fondo con opacidad */
+    background-color: rgba(0,0,0,0.4); /* Fondo con opacidad */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 500px; /* Ancho máximo del modal */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra del modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#comment-input {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    background-color: rgb(52, 124, 162);
+    color: #fff;
+    font-size: 20px;
+}
