@@ -42,13 +42,6 @@ window.addEventListener("load", function () {
         });
     });
 
-    //! Ejemplo de Sincronía
-    console.log("Sincronía: Esto se ejecuta antes de la función asíncrona");
-
-    //! Ejemplo de Asincronía usando setTimeout
-    setTimeout(() => {
-        console.log("Asincronía: Esto se ejecuta después de 2 segundos");
-    }, 2000);
 
     //! Cargando comentarios de las imágenes desde un archivo JSON usando Fetch
     fetch('./json/coments.json')
